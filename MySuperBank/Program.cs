@@ -25,6 +25,17 @@ namespace MySuperBank
                 Console.WriteLine(e.ToString());
             }
 
+            // Test for a negative balance.
+            try
+            {
+                account.MakeWithdrawal(750, DateTime.Now, "Attempt to overdraw");
+            }
+            catch (InvalidOperationException e)
+            {
+                Console.WriteLine("Exception caught trying to overdraw");
+                Console.WriteLine(e.ToString());
+            }
+
             account.MakeWithdrawal(130, DateTime.Now, "fees");
         }
     }
