@@ -1,11 +1,13 @@
 ﻿using System;
 
+//This is the main file
 namespace MySuperBank
 {
     class Program
     {
         static void Main(string[] args)
         {
+            // Manipulating the BankAccount class
             var account = new BankAccount("Cameron", 100000);
             Console.WriteLine($"Account {account.Number} was created for {account.Owner} with {account.Balance}.");
 

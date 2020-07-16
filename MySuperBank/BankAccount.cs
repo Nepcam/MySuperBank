@@ -24,6 +24,7 @@ namespace MySuperBank
 
         private static int accountNumberSeed = 1234567890;
 
+        // Transaction parsed into the List method   
         private List<Transaction> allTransactions = new List<Transaction>();
 
         public BankAccount(string name, decimal initialBalance)
